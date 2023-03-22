@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,400;1,700&display=swap");
+/* @import 'slick-carousel/slick/slick.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+
+  b {
+    @apply font-bold;
+  }
+
+  label,
+  div,
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-sm;
+  }
+  form {
+    height: 100%;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  table {
+    @apply w-full border border-collapse;
+  }
+
+  thead td {
+    @apply border text-center py-2;
+  }
+  tbody td {
+    @apply py-2;
+  }
+}
