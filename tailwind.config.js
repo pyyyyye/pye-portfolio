@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{jsx,tsx}", "../../shared/atoms/**/*.{jsx,tsx}"],
-
-  // content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  // purge: ["./src/**/*.{jsx,tsx}", "../../shared/atoms/**/*.{jsx,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
     screens: {
@@ -39,14 +38,6 @@ module.exports = {
         Rampart: ["Roboto", "sans-serif"],
       },
       colors: {
-        red: {
-          pale: "#FFDBDE",
-          light: "#FFBAC1",
-          bright: "#F5626D",
-          DEFAULT: "#ED394B",
-          deep: "#CF1124",
-          dark: "#8F0007",
-        },
         gray: {
           white: "#F7F8FA",
           light: "#DCDFE3",
