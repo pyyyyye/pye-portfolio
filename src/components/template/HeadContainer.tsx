@@ -1,16 +1,14 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
 interface Type {
-  children: Children;
   title?: string;
   content?: string;
 }
 
 const HeadContainer = ({
-  children,
-  title = "FMS",
-  content = "농장경영 시스템",
+  title = '프론트엔드 박영은입니다 ☺️',
+  content = '박영은 포트폴리오 페이지',
 }: Type) => {
   return (
     <>
@@ -19,7 +17,6 @@ const HeadContainer = ({
         <meta name="description" content={content} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <>{children}</>
     </>
   );
 };
