@@ -9,6 +9,7 @@ const Text = ({
   center = false,
   truncate = false,
   bold = false,
+  bg = false,
 }: TextComponentProps) => {
   return (
     <span
@@ -16,6 +17,7 @@ const Text = ({
         size,
         color,
         bold ? 'font-bold' : 'font-normal',
+        bg && 'bg-yellow-bg',
         { 'text-center': center },
         { truncate: truncate },
       )}>

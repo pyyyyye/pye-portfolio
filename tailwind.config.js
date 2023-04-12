@@ -24,6 +24,7 @@ module.exports = {
       '2xl': '24px',
       '3xl': '28px',
       '4xl': '32px',
+      'xxl': '160px',
     },
     fontWeight: {
       headline: 100,
@@ -39,9 +40,14 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Rampart: ['Roboto', 'sans-serif'],
+        Rampart: ['Roboto', 'sans-serif', ],
+        Tommy :['Tommy',]
       },
       colors: {
+        yellow:{
+          back:'#FBF9F2',
+          bg:'#FBED76'
+        },
         gray: {
           white: '#F7F8FA',
           light: '#DCDFE3',
