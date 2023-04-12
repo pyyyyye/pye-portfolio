@@ -14,10 +14,10 @@ const ContactActiveButton = ({
   };
   return (
     <Button onClick={onClick}>
-      <div className="flex gap-4 items-center border border-green-800">
+      <div className="flex gap-4 items-center">
         {children}
         {click && (
-          <div className="border border-black">
+          <div>
             <Text>{content}</Text>
           </div>
         )}

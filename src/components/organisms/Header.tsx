@@ -9,9 +9,6 @@ import {
 } from '@/src/assets/Icons';
 
 const Header = () => {
-  const onClick = () => {
-    console.log('클릭');
-  };
   return (
     <div className="flex justify-between items-center">
       <div>
@@ -24,13 +21,13 @@ const Header = () => {
         <ContactActiveButton content="par000eun@gmail.com">
           <EmailIcon width={24} />
         </ContactActiveButton>
-        <Button onClick={onClick}>
+        <Button onClick={()=>window.open('https://www.notion.so/2-9f48dfda6a8c49c6a8a872340cdb98ae')}>
           <NotionLogo width={24} />
         </Button>
-        <Button onClick={onClick}>
+        <Button onClick={()=>window.open('https://github.com/pyyyyye')}>
           <GithubLogo width={24} />
         </Button>
-        <Button onClick={onClick}>
+        <Button onClick={()=>window.open('https://velog.io/@park0eun')}>
           <VelogLogo width={24} />
         </Button>
       </div>
