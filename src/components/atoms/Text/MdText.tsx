@@ -2,15 +2,15 @@ import React from 'react';
 import classNames from 'classnames';
 import { TextComponentProps } from './type';
 
-const Text = ({
+const MdText = ({
   children,
-  fontType = '',
   color = 'text-black',
-  size = 'text-base',
+  size = 'text-lg',
   center = false,
   truncate = false,
   bold = false,
   bg = false,
+  fontType = '',
 }: TextComponentProps) => {
   return (
     <span
@@ -28,4 +28,4 @@ const Text = ({
   );
 };
 
-export default Text;
+export default MdText;

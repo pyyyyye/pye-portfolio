@@ -7,5 +7,6 @@ export interface TextComponentProps {
   truncate?: boolean;
   size?: string;
   color?: string;
-  bg?: boolean
+  bg?: boolean;
+  fontType?: string;
 }

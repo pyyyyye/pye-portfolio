@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // import { FlexWrap, MdText, Title } from "@shared/atoms";
 // import type { IDataType } from "./type";
 

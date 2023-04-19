@@ -24,7 +24,8 @@ module.exports = {
       '2xl': '24px',
       '3xl': '28px',
       '4xl': '32px',
-      'xxl': '160px',
+      xxl: '60px',
+      xxxl: '160px',
     },
     fontWeight: {
       headline: 100,
@@ -39,14 +40,19 @@ module.exports = {
       black: 900,
     },
     extend: {
+      profileImg: {
+        selfie: "url('/src/Assets/profile.png')",
+      },
       fontFamily: {
-        Rampart: ['Roboto', 'sans-serif', ],
-        Tommy :['Tommy',]
+        Rampart: ['Roboto', 'sans-serif'],
+        Tommy: ['Tommy'],
+        Ssuround: ['Cafe24Ssurround'],
+        SsuroundAir: ['Cafe24SsurroundAir'],
       },
       colors: {
-        yellow:{
-          back:'#FBF9F2',
-          bg:'#FBED76'
+        yellow: {
+          back: '#FBF9F2',
+          bg: '#FFD74B',
         },
         gray: {
           white: '#F7F8FA',
