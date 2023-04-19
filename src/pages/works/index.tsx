@@ -1,7 +1,8 @@
-import React from "react";
+import { WorksTemplate } from '@/src/components';
+import React from 'react';
 
 const Works = () => {
-  return <span>Works</span>;
+  return <WorksTemplate />;
 };
 
 export default Works;

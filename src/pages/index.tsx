@@ -2,7 +2,9 @@ import React from 'react';
 import Main from './main';
 import AboutMe from './aboutMe';
 import Works from './works';
-import { ContactMe, HeadContainer, Header } from '@/src';
+import ContactMe from './contactMe';
+
+import { HeadContainer, Header } from '@/src';
 
 const Home = () => {
   return (
