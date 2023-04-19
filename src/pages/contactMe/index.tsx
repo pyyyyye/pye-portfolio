@@ -1,7 +1,8 @@
-import React from "react";
+import { ContactMeTemplate } from '@/src/components';
+import React from 'react';
 
 const ContactMe = () => {
-  return <span>ContactMe</span>;
+  return <ContactMeTemplate />;
 };
 
 export default ContactMe;

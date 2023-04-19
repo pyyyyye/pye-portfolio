@@ -1,2 +1,2 @@
-export { default as ContactMe } from './ContactMe';
+export { default as EmailjsForm } from './EmailjsForm';
 export { default as Header } from './Header';
