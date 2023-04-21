@@ -49,6 +49,7 @@ module.exports = {
       colors: {
         yellow: {
           back: '#FBF9F2',
+          DEFAULT: '#FFEAA1',
           bg: '#FFD74B',
         },
         blue: {

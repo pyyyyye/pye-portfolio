@@ -8,12 +8,12 @@ import {
   PhoneIcon,
 } from '@/src/assets/Icons';
 
-const Header = ({ children }: { children: Children }) => {
+const ContactBtnWrap = () => {
   return (
-    <div className="w-full fixed p-16 z-50">
+    <div className="w-full p-16 border-2 border-red-400">
       <div className="flex justify-between items-center">
         <div>
-          <Text>{children}</Text>
+          <Text>버튼랩</Text>
         </div>
         <div className="flex gap-6">
           <ContactActiveButton content="010-8033-9078">
@@ -42,4 +42,4 @@ const Header = ({ children }: { children: Children }) => {
   );
 };
 
-export default Header;
+export default ContactBtnWrap;
