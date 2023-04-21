@@ -1,6 +1,6 @@
 import React from 'react';
 import Map from '@/src/components/molecules/Map';
-import { MainTemplate } from '@/src';
+import { Header, MainTemplate } from '@/src';
 
 const Main = () => {
   return (

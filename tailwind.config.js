@@ -40,9 +40,6 @@ module.exports = {
       black: 900,
     },
     extend: {
-      profileImg: {
-        selfie: "url('/src/Assets/profile.png')",
-      },
       fontFamily: {
         Rampart: ['Roboto', 'sans-serif'],
         Tommy: ['Tommy'],
@@ -53,6 +50,9 @@ module.exports = {
         yellow: {
           back: '#FBF9F2',
           bg: '#FFD74B',
+        },
+        blue: {
+          bg: '#1326CE',
         },
         gray: {
           white: '#F7F8FA',

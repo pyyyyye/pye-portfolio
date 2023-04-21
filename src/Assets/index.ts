@@ -23,3 +23,6 @@ export { default as FigmaLogo } from './FigmaLogo.svg';
 export { default as Recoil } from './Recoil.svg';
 export { default as Zeplin } from './Zeplin.svg';
 export { default as Slack } from './Slack.svg';
+
+export { default as Mockup1 } from './Mockup1.png';
+export { default as MacbookMockup1 } from './MacbookMockup1.png';

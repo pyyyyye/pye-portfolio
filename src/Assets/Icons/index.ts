@@ -7,3 +7,4 @@ export { default as EmailIcon } from './EmailIcon';
 export { default as ArrowIcon } from './ArrowIcon';
 export { default as QuotationIcon } from './QuotationIcon';
 export { default as SendIcon } from './SendIcon';
+export { default as ArrowRightUpIcon } from './ArrowRightUpIcon';

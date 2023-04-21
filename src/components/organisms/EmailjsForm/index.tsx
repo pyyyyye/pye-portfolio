@@ -1,5 +1,5 @@
 import React from 'react';
 
-const ContactMe = () => <div>ContactMe</div>;
+const EmailjsForm = () => <div>EmailjsForm</div>;
 
-export default ContactMe;
+export default EmailjsForm;

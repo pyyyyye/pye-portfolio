@@ -8,12 +8,12 @@ import {
   PhoneIcon,
 } from '@/src/assets/Icons';
 
-const Header = () => {
+const Header = ({ children }: { children: Children }) => {
   return (
     <div className="w-full fixed p-16 z-50">
       <div className="flex justify-between items-center">
         <div>
-          <Text>2021 - 2023</Text>
+          <Text>{children}</Text>
         </div>
         <div className="flex gap-6">
           <ContactActiveButton content="010-8033-9078">

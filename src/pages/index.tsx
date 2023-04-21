@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <HeadContainer />
-      <div className="flex flex-col bg-yellow-back ">
-        <Header />
+      <div className="flex flex-col bg-yellow-back">
+        {/* <Header>2021 - 2023</Header> */}
         <Main />
         <AboutMe />
         <Works />
