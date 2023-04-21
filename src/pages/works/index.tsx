@@ -1,8 +1,6 @@
 import { WorksTemplate } from '@/src/components';
 import React from 'react';
 
-const Works = () => {
-  return <WorksTemplate />;
-};
+const Works = () => <WorksTemplate />;
 
 export default Works;
