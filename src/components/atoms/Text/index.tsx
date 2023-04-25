@@ -11,6 +11,9 @@ const Text = ({
   truncate = false,
   bold = false,
   bg = false,
+  leading = '',
+  border = '',
+  borderColor = '',
 }: TextComponentProps) => {
   return (
     <span
@@ -18,6 +21,9 @@ const Text = ({
         fontType,
         size,
         color,
+        border && border,
+        borderColor && borderColor,
+        leading && leading,
         bold ? 'font-bold' : 'font-normal',
         bg && 'bg-yellow-bg',
         { 'text-center': center },

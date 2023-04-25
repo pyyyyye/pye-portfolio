@@ -9,4 +9,7 @@ export interface TextComponentProps {
   color?: string;
   bg?: boolean;
   fontType?: string;
+  leading?: string;
+  border?: string;
+  borderColor?: string;
 }

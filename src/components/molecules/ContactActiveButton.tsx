@@ -1,27 +1,18 @@
-import React, { useState } from 'react';
-import { Button, Text } from '@/src';
+import React from 'react';
+import { Button } from '@/src';
 
 const ContactActiveButton = ({
   children,
-  content,
+  onClick,
+  hoverColor,
 }: {
   children: Children;
-  content: string;
+  onClick: funVoid;
+  hoverColor?: string;
 }) => {
-  const [click, setClick] = useState(false);
-  const onClick = () => {
-    setClick(!click);
-  };
   return (
-    <Button onClick={onClick}>
-      <div className="flex gap-4 items-center">
-        {children}
-        {click && (
-          <div>
-            <Text>{content}</Text>
-          </div>
-        )}
-      </div>
+    <Button hoverColor={hoverColor} onClick={onClick}>
+      <div className="flex gap-4 items-center ">{children}</div>
     </Button>
   );
 };
