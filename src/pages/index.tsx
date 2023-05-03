@@ -1,20 +1,19 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Main from './main';
 import AboutMe from './aboutMe';
 import Works from './works';
 import ContactMe from './contactMe';
 
 import { Button, HeadContainer, Menu, Text } from '@/src';
+import { useMoveHook } from '@/hooks';
 
 const Home = () => {
-  const useMoveScroll = () => {
-    () => console.log('홈홈 무브스크롤');
-    const element = useRef<HTMLDivElement>(null);
-    const onMoveToElement = () => {
-      element.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // element.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    };
-    return { element, onMoveToElement };
+  const MenuDummy = {
+    0: useMoveHook('Home'),
+    1: useMoveHook('About me'),
+    2: useMoveHook('Works'),
+    3: useMoveHook('Contact me'),
+    length: 4,
   };
 
   return (
@@ -22,25 +21,26 @@ const Home = () => {
       <HeadContainer />
       <div className="flex flex-col bg-yellow-back relative snap-y">
         <Menu>
-          <>
-            <Button onClick={useMoveScroll}>
-              <Text>Home</Text>
-            </Button>
-            <Button onClick={() => console.log('어바웃미')}>
-              <Text>About me</Text>
-            </Button>
-            <Button onClick={() => console.log('작업들')}>
-              <Text>Works</Text>
-            </Button>
-            <Button onClick={() => console.log('콘택미')}>
-              <Text>Contact me</Text>
-            </Button>
-          </>
+          {Array.from(MenuDummy).map((ele, index) => {
+            return (
+              <Button key={index} onClick={ele.onMoveToElement}>
+                <Text>{ele.listName}</Text>
+              </Button>
+            );
+          })}
         </Menu>
-        <Main />
-        <AboutMe />
-        <Works />
-        <ContactMe />
+        <div ref={MenuDummy[0].element}>
+          <Main />
+        </div>
+        <div ref={MenuDummy[1].element}>
+          <AboutMe />
+        </div>
+        <div ref={MenuDummy[2].element}>
+          <Works />
+        </div>
+        <div ref={MenuDummy[3].element}>
+          <ContactMe />
+        </div>
       </div>
     </>
   );
