@@ -1,4 +1,4 @@
-import { CloseIcon } from '@/src/assets';
+import CloseIcon from '../../assets/Icons/CloseIcon';
 import React from 'react';
 
 const MenuButton = ({
