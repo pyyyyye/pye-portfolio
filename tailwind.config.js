@@ -49,11 +49,15 @@ module.exports = {
       colors: {
         yellow: {
           back: '#FBF9F2',
+          light: '#FFF3CA',
           DEFAULT: '#FFEAA1',
           bg: '#FFD74B',
         },
         blue: {
           bg: '#1326CE',
+        },
+        green: {
+          velogBg: '#A9DDC6',
         },
         gray: {
           white: '#F7F8FA',
@@ -67,7 +71,7 @@ module.exports = {
         },
       },
       dropShadow: {
-        sm: '0 2px 4px rgb(0 0 0 / 0.04)',
+        sm: '0 2px 4px rgb(0 0 0 / 0.1)',
         DEFAULT: [
           '0px 1px 2px rgba(0, 0, 0, 0.02)',
           '0px 4px 16px rgba(0, 0, 0, 0.1)',

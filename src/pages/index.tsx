@@ -4,18 +4,43 @@ import AboutMe from './aboutMe';
 import Works from './works';
 import ContactMe from './contactMe';
 
-import { HeadContainer, Header } from '@/src';
+import { Button, HeadContainer, Menu, Text } from '@/src';
+import { useMoveHook } from '@/hooks';
 
 const Home = () => {
+  const MenuDummy = {
+    0: useMoveHook('Home'),
+    1: useMoveHook('About me'),
+    2: useMoveHook('Works'),
+    3: useMoveHook('Contact me'),
+    length: 4,
+  };
+
   return (
     <>
       <HeadContainer />
-      <div className="flex flex-col bg-yellow-back">
-        {/* <Header>2021 - 2023</Header> */}
-        <Main />
-        <AboutMe />
-        <Works />
-        <ContactMe />
+      <div className="flex flex-col bg-yellow-back relative snap-y">
+        <Menu>
+          {Array.from(MenuDummy).map((ele, index) => {
+            return (
+              <Button key={index} onClick={ele.onMoveToElement}>
+                <Text>{ele.listName}</Text>
+              </Button>
+            );
+          })}
+        </Menu>
+        <div ref={MenuDummy[0].element}>
+          <Main />
+        </div>
+        <div ref={MenuDummy[1].element}>
+          <AboutMe />
+        </div>
+        <div ref={MenuDummy[2].element}>
+          <Works />
+        </div>
+        <div ref={MenuDummy[3].element}>
+          <ContactMe />
+        </div>
       </div>
     </>
   );
