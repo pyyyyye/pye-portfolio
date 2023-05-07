@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { BasicContent, Text } from '@/src/components';
+import { BasicContent, Button, Text } from '@/src/components';
 import profile from '../../Assets/profile.png';
 import {
   Emotion,
@@ -50,32 +50,45 @@ const AboutMeTemplate = () => {
           <span className="font-Ssuround">&quot;</span>
         </div>
       </div>
-      <div className="w-2/3 p-28 pt-36 flex flex-col gap-12">
-        <BasicContent title="About Me">
-          <div className="flex flex-col gap-2 ">
-            <Text>
-              - 코드 한 줄 한 줄을 가지고 <Text bold>어떻게, 왜 </Text>기능이
-              구현되었는지 이해하려고 노력합니다.
-            </Text>
-            <Text>
-              - 가능한 한 쓸데없는 코드는 줄이고
-              <Text bold> 간결하게 작성하려고 노력</Text>합니다.
-            </Text>
-            <Text>
-              - 사소한 이야기, 깊고 의미있는 이야기 가리지 않고
-              <Text bold>모든 대화를 중요하게 여기며 즐기는 편</Text>입니다.
-            </Text>
-            <Text>
-              <Text bold>- 디자이너와 개발자 모두의 입장을 이해</Text>
-              하여 팀원들과의 원활한 소통과 협업을 할 수 있습니다.
-            </Text>
-            <Text>
-              - 유저의 사용성과 경험을 고려한
-              <Text bold> UI/UX 디자인에 대한 이해도가 높아</Text>, 사용자
-              친화적이고 세심한 UI를 제공하는 데 노력합니다.
-            </Text>
+      <div className="w-2/3 p-28 pt-32 flex flex-col gap-12">
+        <div className="flex flex-col">
+          <div className="flex justify-end">
+            <button
+              onClick={() =>
+                window.open(
+                  'https://www.notion.so/2-9f48dfda6a8c49c6a8a872340cdb98ae',
+                )
+              }
+              className="p-1 px-2  bg-yellow-100 hover:bg-yellow-bg border border-yellow-bg rounded-md">
+              노션 이력서 보기
+            </button>
           </div>
-        </BasicContent>
+          <BasicContent title="About Me">
+            <div className="flex flex-col gap-2 ">
+              <Text>
+                - 코드 한 줄 한 줄을 가지고 <Text bold>어떻게, 왜 </Text>기능이
+                구현되었는지 이해하려고 노력합니다.
+              </Text>
+              <Text>
+                - 가능한 한 쓸데없는 코드는 줄이고
+                <Text bold> 간결하게 작성하려고 노력</Text>합니다.
+              </Text>
+              <Text>
+                - 사소한 이야기, 깊고 의미있는 이야기 가리지 않고
+                <Text bold>모든 대화를 중요하게 여기며 즐기는 편</Text>입니다.
+              </Text>
+              <Text>
+                <Text bold>- 디자이너와 개발자 모두의 입장을 이해</Text>
+                하여 팀원들과의 원활한 소통과 협업을 할 수 있습니다.
+              </Text>
+              <Text>
+                - 유저의 사용성과 경험을 고려한
+                <Text bold> UI/UX 디자인에 대한 이해도가 높아</Text>, 사용자
+                친화적이고 세심한 UI를 제공하는 데 노력합니다.
+              </Text>
+            </div>
+          </BasicContent>
+        </div>
         <div className="flex justifiy-between gap-10">
           <div className="w-3/4">
             <BasicContent title="Skills" justify>
