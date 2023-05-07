@@ -2,11 +2,11 @@ export * from './Icons';
 
 export { default as CloseIcon } from './CloseIcon';
 
+export { default as MacbookMockup1 } from './MacbookMockup1.png';
+export { default as Mockup1 } from './Mockup1.png';
+
 export { default as StyledComponent } from './StyledComponenet.png';
 export { default as Emotion } from './Emotion.png';
-
-export { default as Mockup1 } from './Mockup1.png';
-export { default as MacbookMockup1 } from './MacbookMockup1.png';
 
 export { default as LogoAi } from './LogoAi';
 export { default as LogoApolloClient } from './LogoApolloClient';

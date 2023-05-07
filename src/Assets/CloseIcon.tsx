@@ -1,11 +1,11 @@
 import React from 'react';
 import { Type } from './Icons/type';
 
-const CloseIcon = ({ width, height, fill }: Type) => (
+const CloseIcon = ({ width, height }: Type) => (
   <svg
     width={width}
     height={height}
-    fill={fill}
+    fill="#000"
     viewBox="0 0 14 14"
     xmlns="http://www.w3.org/2000/svg">
     <path
