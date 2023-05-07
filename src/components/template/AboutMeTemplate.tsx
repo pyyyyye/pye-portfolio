@@ -3,29 +3,29 @@ import Image from 'next/image';
 import { BasicContent, Text } from '@/src/components';
 import profile from '../../Assets/profile.png';
 import {
-  ApolloClient,
-  Css,
-  Gql,
-  Html,
-  Js,
-  Nextjs,
-  Reactjs,
-  Scss,
-  Tailwind,
-  Ts,
-  Vue,
-  RestAPI,
-  StyledComponent,
   Emotion,
-  Vercel,
-  ReactNative,
-  Electron,
-  Recoil,
-  FigmaLogo,
-  AiLogo,
-  PsLogo,
-  Slack,
-  Zeplin,
+  LogoAi,
+  LogoApolloClient,
+  LogoCss,
+  LogoElectron,
+  LogoFigma,
+  LogoGql,
+  LogoHtml,
+  LogoJs,
+  LogoNextjs,
+  LogoPs,
+  LogoReactNative,
+  LogoReactjs,
+  LogoRecoil,
+  LogoRestApi,
+  LogoScss,
+  LogoSlack,
+  LogoTailwind,
+  LogoTs,
+  LogoVercel,
+  LogoVue,
+  LogoZeplin,
+  StyledComponent,
 } from '@/src/assets';
 
 const AboutMeTemplate = () => {
@@ -81,45 +81,45 @@ const AboutMeTemplate = () => {
             <BasicContent title="Skills" justify>
               <div className="flex flex-col gap-4">
                 <div className="flex gap-2">
-                  <Image src={Html} alt="Html" width={14} />
+                  <LogoHtml width={14} />
                   <Text>Html</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Css} alt="Css" width={14} />
+                  <LogoCss width={14} />
                   <Text>Css</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Reactjs} alt="React" width={14} />
+                  <LogoReactjs width={14} />
                   <Text>React</Text>
                 </div>
                 <div className="flex gap-2 ">
-                  <Image src={Vue} alt="Vue" width={14} />
+                  <LogoVue width={14} />
                   <Text>Vue</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Nextjs} alt="Nextjs" width={14} />
+                  <LogoNextjs width={14} />
                   <Text>Next.js</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Js} alt="Js" width={14} />
+                  <LogoJs width={14} />
                   <Text>JavaScript</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Ts} alt="Ts" width={14} />
+                  <LogoTs width={14} />
                   <Text>TypeScript</Text>
                 </div>
               </div>
               <div className="flex flex-col gap-4">
                 <div className="flex gap-2  items-center">
-                  <Image src={RestAPI} alt="RestfullAPI" width={14} />
+                  <LogoRestApi width={14} />
                   <Text>RestAPI</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Gql} alt="Gql" width={14} />
+                  <LogoGql width={14} />
                   <Text>GraphQL</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={ApolloClient} alt="Apollo-client" width={14} />
+                  <LogoApolloClient width={14} height={14} />
                   <Text>Apollo-Client</Text>
                 </div>
                 <div className="flex gap-2 items-center">
@@ -131,38 +131,40 @@ const AboutMeTemplate = () => {
                   <Text>Styled Component</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Tailwind} alt="Tailwindcss" width={14} />
+                  <LogoTailwind width={14} />
                   <Text>Tailwind CSS</Text>
                 </div>
                 <div className="flex gap-2 items-center">
                   <Image src={Emotion} alt="Emotion" width={14} />
                   <Text>Emotion</Text>
                 </div>
-                <div className="flex gap-2">
-                  <Image src={Scss} alt="Scss" width={14} />
+                <div className="flex gap-2 ">
+                  <div className="pt-1">
+                    <LogoScss width={14} />
+                  </div>
                   <Text>Scss</Text>
                 </div>
               </div>
               <div className="flex flex-col justify-between">
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-2 items-center">
-                    <Image src={FigmaLogo} alt="Figma" width={14} />
+                    <LogoFigma width={14} />
                     <Text>Figma</Text>
                   </div>
                   <div className="flex gap-2">
-                    <Image src={PsLogo} alt="Photoshop" width={14} />
+                    <LogoPs width={14} />
                     <Text>Adobe Photoshop</Text>
                   </div>
                   <div className="flex gap-2">
-                    <Image src={AiLogo} alt="Illustratoin" width={14} />
+                    <LogoAi width={14} />
                     <Text>Adobe Illustratoin</Text>
                   </div>
                   <div className="flex gap-2">
-                    <Image src={Slack} alt="Slack" width={14} />
+                    <LogoSlack width={14} />
                     <Text>Slack</Text>
                   </div>
                   <div className="flex gap-2">
-                    <Image src={Vercel} alt="Vercel" width={14} />
+                    <LogoVercel width={14} />
                     <Text>Vercel</Text>
                   </div>
                 </div>
@@ -176,19 +178,19 @@ const AboutMeTemplate = () => {
             <BasicContent title="Experienced">
               <div className="flex flex-col gap-4">
                 <div className="flex gap-2">
-                  <Image src={ReactNative} alt="React Native" width={14} />
+                  <LogoReactNative width={14} />
                   <Text>React Native</Text>
                 </div>
                 <div className="flex gap-2">
-                  <Image src={Electron} alt="Electron" width={14} />
+                  <LogoElectron width={14} />
                   <Text>Electron</Text>
                 </div>
                 <div className="flex gap-2  items-center">
-                  <Image src={Recoil} alt="Recoil" width={14} />
+                  <LogoRecoil width={14} height={14} />
                   <Text>Recoil</Text>
                 </div>
                 <div className="flex gap-2  items-center">
-                  <Image src={Zeplin} alt="Zeplin" width={14} />
+                  <LogoZeplin width={14} />
                   <Text>Zeplin</Text>
                 </div>
               </div>

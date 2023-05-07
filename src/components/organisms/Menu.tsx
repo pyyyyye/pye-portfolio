@@ -9,7 +9,6 @@ import {
 } from '@/src/assets/Icons';
 
 const Menu = ({ children }: { children: Children }) => {
-  // const Menu = ({ onClickMenu }: { onClickMenu: MouseEvent }) => {
   const [menu, setMenu] = useState(false);
   const [phone, setPhone] = useState(false);
   const [email, setEmail] = useState(false);
@@ -29,19 +28,6 @@ const Menu = ({ children }: { children: Children }) => {
         <div className="rounded-lg  bg-white w-min  p-4 flex flex-col shadow-lg">
           <div className="flex flex-col border-b border-gray-100 pb-2">
             {children}
-            {/* <Button onClick={() => console.log('홈')}> */}
-            {/* <Button onClick={onClickMenu}>
-              <Text>Home</Text>
-            </Button>
-            <Button onClick={() => console.log('어바웃미')}>
-              <Text>About me</Text>
-            </Button>
-            <Button onClick={() => console.log('작업들')}>
-              <Text>Works</Text>
-            </Button>
-            <Button onClick={() => console.log('콘택미')}>
-              <Text>Contact me</Text>
-            </Button> */}
           </div>
           <div className="h-4 items-center align-middle text-center py-8">
             <Text
