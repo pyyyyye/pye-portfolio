@@ -1,4 +1,4 @@
-import CloseIcon from '../../assets/Icons/CloseIcon';
+import { ArrowIcon, CloseIcon } from '@/src/assets';
 import React from 'react';
 
 const MenuButton = ({
@@ -13,7 +13,8 @@ const MenuButton = ({
       onClick={onClickMenu}
       className="p-4 w-min rounded-lg  flex flex-col gap-1 hover:bg-yellow-light items-center">
       {active ? (
-        <CloseIcon width={16} />
+        // <CloseIcon width={16} />
+        <ArrowIcon width={16} />
       ) : (
         <>
           <hr className="border border-black w-4" />
