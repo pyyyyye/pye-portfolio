@@ -1,5 +1,5 @@
 import React from 'react';
-import { Type } from './type';
+import { Type } from './Icons/type';
 
 const CloseIcon = ({ width, height, fill }: Type) => (
   <svg

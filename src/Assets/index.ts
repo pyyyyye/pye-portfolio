@@ -1,5 +1,7 @@
 export * from './Icons';
 
+export { default as CloseIcon } from './CloseIcon';
+
 export { default as StyledComponent } from './StyledComponenet.png';
 export { default as Emotion } from './Emotion.png';
 
