@@ -8,8 +8,15 @@ import {
   PhoneIcon,
 } from '@/src/assets/Icons';
 
-const Menu = ({ children }: { children: Children }) => {
-  const [menu, setMenu] = useState(false);
+const Menu = ({
+  children,
+  menu,
+  setMenu,
+}: {
+  children: Children;
+  menu: boolean;
+  setMenu: (menu: boolean) => void;
+}) => {
   const [phone, setPhone] = useState(false);
   const [email, setEmail] = useState(false);
   const phoneClick = () => {
