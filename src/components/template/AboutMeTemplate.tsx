@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { BasicContent, Button, Text } from '@/src/components';
-import profile from '../../Assets/profile.png';
+import { BasicContent, Text } from '@/src/components';
+// import profile from '../../Assets/profile.png';
 import {
   Emotion,
   LogoAi,
@@ -26,13 +26,14 @@ import {
   LogoVue,
   LogoZeplin,
   StyledComponent,
+  MyProfileImg,
 } from '@/src/assets';
 
 const AboutMeTemplate = () => {
   return (
     <div className="flex h-screen w-full">
       <div className="bg-yellow-bg px-28 pt-32 relative top-0">
-        <Image src={profile} alt="Picture of me" width={264} />
+        <Image src={MyProfileImg} alt="Picture of me" width={264} />
         <div className="flex flex-col gap-2 absolute bottom-20 right-24 text-2xl font-SsuroundAir">
           <span className="font-Ssuround">&quot;</span>
           <span>
@@ -141,7 +142,7 @@ const AboutMeTemplate = () => {
                     alt="Styled Component"
                     width={14}
                   />
-                  <Text>Styled Component</Text>
+                  <Text>Styled-Component</Text>
                 </div>
                 <div className="flex gap-2">
                   <LogoTailwind width={14} />
