@@ -141,7 +141,7 @@ const AboutMeTemplate = () => {
                     alt="Styled Component"
                     width={14}
                   />
-                  <Text>Styled Component</Text>
+                  <Text>Styled-Component</Text>
                 </div>
                 <div className="flex gap-2">
                   <LogoTailwind width={14} />
