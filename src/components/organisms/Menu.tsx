@@ -6,7 +6,7 @@ import {
   NotionLogo,
   EmailIcon,
   PhoneIcon,
-} from '@/src/assets/Icons';
+} from '@/src/assets';
 
 const Menu = ({ children }: { children: Children }) => {
   const [menu, setMenu] = useState(false);
