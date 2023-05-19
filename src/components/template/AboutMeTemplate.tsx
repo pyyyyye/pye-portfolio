@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { BasicContent, Text } from '@/src/components';
-// import profile from '../../Assets/profile.png';
 import {
   Emotion,
   LogoAi,
